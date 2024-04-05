@@ -1,4 +1,21 @@
-## Welcome to GitHub Pages
+## Welcome to Kayra Sener's Github Page for IE360 Homeworks and Projects
+
+
+
+#HW1 Links:
+[Data Source Sheet with Formulas and Descriptions](EVDS_updated.xlsx)
+
+[HW1 HTML File](ie360hw1.html)
+
+[HW1 Markdown File](rtest.md)
+
+[HW1 Jupyter Notebook File](rtest.ipynb)
+
+
+
+
+
+
 
 You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
 
@@ -36,8 +53,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
-[Data Source Sheet with Formulas and Descriptions](EVDS_updated.xlsx)
-[HW1 HTML File](ie360hw1.html)
-[HW1 Markdown File](rtest.md)
-[HW1 Jupyter Notebook File](rtest.ipynb)
 
