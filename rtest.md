@@ -375,7 +375,7 @@ ggplot(nlin_exchange_rate,aes(x=DATE,y=log_EXCH)) +    #Checking for any irregul
     
 
 
-#Residual analysis looks much better now. We should check for R-squared and p-value too as well as the autocorrelation of residuals to see if we missed any additional relation between variables.
+#Although there are problems with higher and lower values, residual analysis looks much better now. We should check for R-squared and p-value too as well as the autocorrelation of residuals to see if we missed any additional relation between variables.
 
 
 ```R
@@ -647,6 +647,9 @@ summary(sqr_fit)
     
 
 
+#Logarithmic transformation:
+
+
 
 ```R
 log_unemployement <- copy(unemployement)
@@ -658,19 +661,19 @@ summary(log_fit)
 
 
     
-![png](rtest_files/rtest_24_0.png)
+![png](rtest_files/rtest_25_0.png)
     
 
 
 
     
-![png](rtest_files/rtest_24_1.png)
+![png](rtest_files/rtest_25_1.png)
     
 
 
 
     
-![png](rtest_files/rtest_24_2.png)
+![png](rtest_files/rtest_25_2.png)
     
 
 
@@ -719,9 +722,11 @@ summary(log_fit)
 
 
     
-![png](rtest_files/rtest_24_4.png)
+![png](rtest_files/rtest_25_4.png)
     
 
+
+#Square transformation:
 
 
 ```R
@@ -734,19 +739,19 @@ summary(sq_fit)
 
 
     
-![png](rtest_files/rtest_25_0.png)
+![png](rtest_files/rtest_27_0.png)
     
 
 
 
     
-![png](rtest_files/rtest_25_1.png)
+![png](rtest_files/rtest_27_1.png)
     
 
 
 
     
-![png](rtest_files/rtest_25_2.png)
+![png](rtest_files/rtest_27_2.png)
     
 
 
@@ -794,11 +799,11 @@ summary(sq_fit)
 
 
     
-![png](rtest_files/rtest_25_4.png)
+![png](rtest_files/rtest_27_4.png)
     
 
 
-#We'll try one more model that has a combination of nonlinear variables too.
+#We'll try one more model that has a combination of different nonlinear variables too.
 
 
 ```R
@@ -813,19 +818,19 @@ summary(nlin_combined_fit)
 
 
     
-![png](rtest_files/rtest_27_0.png)
+![png](rtest_files/rtest_29_0.png)
     
 
 
 
     
-![png](rtest_files/rtest_27_1.png)
+![png](rtest_files/rtest_29_1.png)
     
 
 
 
     
-![png](rtest_files/rtest_27_2.png)
+![png](rtest_files/rtest_29_2.png)
     
 
 
@@ -876,7 +881,7 @@ summary(nlin_combined_fit)
 
 
     
-![png](rtest_files/rtest_27_4.png)
+![png](rtest_files/rtest_29_4.png)
     
 
 
@@ -943,7 +948,7 @@ plot(l_fit3)
 
 
     
-![png](rtest_files/rtest_32_0.png)
+![png](rtest_files/rtest_34_0.png)
     
 
 
@@ -997,37 +1002,38 @@ plot(l_fit3)
 
 
     
-![png](rtest_files/rtest_32_3.png)
+![png](rtest_files/rtest_34_3.png)
     
 
 
 
     
-![png](rtest_files/rtest_32_4.png)
+![png](rtest_files/rtest_34_4.png)
     
 
 
 
     
-![png](rtest_files/rtest_32_5.png)
+![png](rtest_files/rtest_34_5.png)
     
 
 
 
     
-![png](rtest_files/rtest_32_6.png)
+![png](rtest_files/rtest_34_6.png)
     
 
 
 
     
-![png](rtest_files/rtest_32_7.png)
+![png](rtest_files/rtest_34_7.png)
     
 
 
-#There seems to be multicollinearity between multiple independent variables.
+#There seems to be multicollinearity between multiple independent variables. However, it shouldn't be a problem in neither model-makin nor forecasting.
+#We'll disregard multicollinearity since we're also not interested in creating a simulation.
 
-#A logarithmic transformation seems necessary:
+#Also, looking at BENZTR over time, a logarithmic transformation seems necessary:
 
 
 ```R
@@ -1090,25 +1096,25 @@ plot(log_l_fit3)
 
 
     
-![png](rtest_files/rtest_35_2.png)
+![png](rtest_files/rtest_37_2.png)
     
 
 
 
     
-![png](rtest_files/rtest_35_3.png)
+![png](rtest_files/rtest_37_3.png)
     
 
 
 
     
-![png](rtest_files/rtest_35_4.png)
+![png](rtest_files/rtest_37_4.png)
     
 
 
 
     
-![png](rtest_files/rtest_35_5.png)
+![png](rtest_files/rtest_37_5.png)
     
 
 
@@ -1124,25 +1130,25 @@ acf(log_automobile$log_BENZTR, lag.max = 360)
 
 
     
-![png](rtest_files/rtest_37_0.png)
+![png](rtest_files/rtest_39_0.png)
     
 
 
 
     
-![png](rtest_files/rtest_37_1.png)
+![png](rtest_files/rtest_39_1.png)
     
 
 
 
     
-![png](rtest_files/rtest_37_2.png)
+![png](rtest_files/rtest_39_2.png)
     
 
 
 
     
-![png](rtest_files/rtest_37_3.png)
+![png](rtest_files/rtest_39_3.png)
     
 
 
@@ -1259,37 +1265,37 @@ acf((residuals(log_l_fit3)), lag.max = 360)
 
 
     
-![png](rtest_files/rtest_41_2.png)
+![png](rtest_files/rtest_43_2.png)
     
 
 
 
     
-![png](rtest_files/rtest_41_3.png)
+![png](rtest_files/rtest_43_3.png)
     
 
 
 
     
-![png](rtest_files/rtest_41_4.png)
+![png](rtest_files/rtest_43_4.png)
     
 
 
 
     
-![png](rtest_files/rtest_41_5.png)
+![png](rtest_files/rtest_43_5.png)
     
 
 
 
     
-![png](rtest_files/rtest_41_6.png)
+![png](rtest_files/rtest_43_6.png)
     
 
 
 
     
-![png](rtest_files/rtest_41_7.png)
+![png](rtest_files/rtest_43_7.png)
     
 
 
