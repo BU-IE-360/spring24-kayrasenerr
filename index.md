@@ -35,3 +35,9 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+[Data Source Sheet with Formulas and Descriptions](EVDS_updated.xlsx)
+[HW1 HTML File](ie360hw1.html)
+[HW1 Markdown File](rtest.md)
+[HW1 Jupyter Notebook File](rtest.ipynb)
+
