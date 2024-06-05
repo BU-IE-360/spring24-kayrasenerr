@@ -11,3 +11,10 @@
 [HW1 Markdown File](rtest.md)
 
 [HW1 Jupyter Notebook File](rtest.ipynb)
+
+### Project Links
+[Data Source Sheet with Formulas](production_by_hours.csv)
+
+[R file](detailed_sarima.R)
+
+[Project Report](project_report.pdf)
