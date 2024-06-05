@@ -13,7 +13,9 @@
 [HW1 Jupyter Notebook File](rtest.ipynb)
 
 ### Project Links
-[Data Source Sheet with Formulas](production_by_hours.csv)
+[EXCEL Sheet for Data Manipulation with Formulas](production_by_hours.xlsx)
+
+[Manipulated Data for R to Read](production_by_hours.csv)
 
 [R file](detailed_sarima.R)
 
